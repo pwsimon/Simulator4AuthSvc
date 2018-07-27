@@ -1,10 +1,10 @@
 {
-	"name": "WebService",
-	"version": "0.0.0",
-	"description": "simulator for oAuth",
+	"name": "Simulator4AuthSvc",
+	"version": "0.0.1",
+	"description": "simulate token expiration for a oAuth secured Service",
 	"main": "app.js",
 	"author": {
-		"name": "psi",
+		"name": "pwsimon",
 		"email": "simon.peter.wolf@gmail.com"
 	},
 	"dependencies": {
