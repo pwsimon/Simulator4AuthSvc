@@ -55,5 +55,9 @@ var app = connect()
         };
         res.end(JSON.stringify(tokens));
     });
+/*
+* ich kann/muss diese, priorisierte, port angabe fuer ein Azure environment nutzen denn:
+* Azure stellt das entsprechend dem `web.config` so um das der service auf port 80 bereitsteht.
+*/
 var port = process.env.port || 1310;
 http.createServer(app).listen(port);
