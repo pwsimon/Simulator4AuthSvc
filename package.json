@@ -1,14 +1,15 @@
 {
-	"name": "Simulator4AuthSvc",
-	"version": "0.0.1",
-	"description": "simulate token expiration for a oAuth secured Service",
-	"main": "app.js",
-	"author": {
-		"name": "pwsimon",
-		"email": "simon.peter.wolf@gmail.com"
-	},
-	"dependencies": {
-		"connect": "3.5.0",
-		"body-parser": "1.15.2"
-	}
+  "name": "Simulator4AuthSvc",
+  "version": "0.0.2",
+  "description": "simulate token expiration for a oAuth secured Service",
+  "main": "app.js",
+  "author": {
+    "name": "pwsimon",
+    "email": "simon.peter.wolf@gmail.com"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "connect": "3.5.0",
+    "serve-static": "^1.13.2"
+  }
 }

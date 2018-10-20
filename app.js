@@ -1,5 +1,7 @@
-var http = require('http');
-var connect = require('connect');
+var http = require('http'),
+    connect = require('connect'),
+    serveStatic = require('serve-static');
+
 
 // parse urlencoded request bodies into req.body
 var bodyParser = require('body-parser');
@@ -54,7 +56,14 @@ var app = connect()
             expires_in: 60
         };
         res.end(JSON.stringify(tokens));
-    });
+    })
+
+/*
+* ausliefern von statischen inhalten z.B. hilfe/documentation
+* https://stackoverflow.com/questions/24346161/nodejs-connect-cannot-find-static
+*/
+    .use(serveStatic("./static"));
+
 /*
 * ich kann/muss diese, priorisierte, port angabe fuer ein Azure environment nutzen denn:
 * Azure stellt das entsprechend dem `web.config` so um das der service auf port 80 bereitsteht.
